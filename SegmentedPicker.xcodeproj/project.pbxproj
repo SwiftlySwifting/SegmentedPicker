@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B83FB4112A704BF900B14B8E /* SegmentedPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB4102A704BF900B14B8E /* SegmentedPickerApp.swift */; };
+		B83FB4112A704BF900B14B8E /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB4102A704BF900B14B8E /* SegmentedPicker.swift */; };
 		B83FB4132A704BF900B14B8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB4122A704BF900B14B8E /* ContentView.swift */; };
 		B83FB4152A704BFA00B14B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83FB4142A704BFA00B14B8E /* Assets.xcassets */; };
 		B83FB4182A704BFA00B14B8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83FB4172A704BFA00B14B8E /* Preview Assets.xcassets */; };
+		B83FB4202A704CF200B14B8E /* VerticalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB41F2A704CF200B14B8E /* VerticalPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B83FB40D2A704BF900B14B8E /* SegmentedPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentedPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B83FB4102A704BF900B14B8E /* SegmentedPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerApp.swift; sourceTree = "<group>"; };
+		B83FB4102A704BF900B14B8E /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
 		B83FB4122A704BF900B14B8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B83FB4142A704BFA00B14B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83FB4172A704BFA00B14B8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B83FB4192A704BFA00B14B8E /* SegmentedPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SegmentedPicker.entitlements; sourceTree = "<group>"; };
+		B83FB41F2A704CF200B14B8E /* VerticalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,7 @@
 		B83FB40F2A704BF900B14B8E /* SegmentedPicker */ = {
 			isa = PBXGroup;
 			children = (
-				B83FB4102A704BF900B14B8E /* SegmentedPickerApp.swift */,
-				B83FB4122A704BF900B14B8E /* ContentView.swift */,
+				B83FB4232A704D5800B14B8E /* Views */,
 				B83FB4142A704BFA00B14B8E /* Assets.xcassets */,
 				B83FB4192A704BFA00B14B8E /* SegmentedPicker.entitlements */,
 				B83FB4162A704BFA00B14B8E /* Preview Content */,
@@ -67,6 +68,16 @@
 				B83FB4172A704BFA00B14B8E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B83FB4232A704D5800B14B8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B83FB4102A704BF900B14B8E /* SegmentedPicker.swift */,
+				B83FB4122A704BF900B14B8E /* ContentView.swift */,
+				B83FB41F2A704CF200B14B8E /* VerticalPicker.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83FB4132A704BF900B14B8E /* ContentView.swift in Sources */,
-				B83FB4112A704BF900B14B8E /* SegmentedPickerApp.swift in Sources */,
+				B83FB4202A704CF200B14B8E /* VerticalPicker.swift in Sources */,
+				B83FB4112A704BF900B14B8E /* SegmentedPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -282,8 +296,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scriffles.SegmentedPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +320,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -309,8 +329,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.scriffles.SegmentedPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
