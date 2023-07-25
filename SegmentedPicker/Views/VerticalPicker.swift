@@ -14,6 +14,7 @@ struct VerticalPicker: View {
     private let height:CGFloat = 40
     private let width:CGFloat = 200
     private let appColor:Color = .green
+    private let matchedGeoEffectId = "geoEffect"
     
     var body: some View {
         VStack(spacing: 5) {
@@ -31,7 +32,7 @@ struct VerticalPicker: View {
                             if selectedCity == city {
                                 Capsule()
                                     .foregroundColor(appColor)
-                                    .matchedGeometryEffect(id: "capsule", in: selectionAnimation)
+                                    .matchedGeometryEffect(id: matchedGeoEffectId, in: selectionAnimation)
                             } else {
                                 Capsule()
                                     .foregroundColor(appColor.opacity(0.01))

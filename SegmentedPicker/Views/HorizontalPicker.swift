@@ -12,31 +12,32 @@ struct HorizontalPicker: View {
     @State private var selectedCity = "Austin"
     private let cities = ["Austin","Houston","Dallas","El Paso"]
     private let height:CGFloat = 40
-    private let appColor: Color = .orange
+    private let appColor:Color = .blue
+    private let matchedGeoEffectId = "geoEffect"
     
     var body: some View {
-        HStack(spacing: 5) {
+        HStack {
             ForEach(cities, id: \.self) { city in
                 Button {
                     withAnimation(.linear) {
                         selectedCity = city
                     }
                 } label: {
-                    ZStack {
-                        Capsule()
-                            .foregroundColor(.black.opacity(0.01))
-                        Text(city)
-                            .foregroundColor(selectedCity == city ? .black : .gray)
-                            .font(.body)
-                    }
-                    .frame(height: height)
-                    .background {
-                        if selectedCity == city {
-                            Capsule()
-                                .foregroundColor(appColor)
-                                .matchedGeometryEffect(id: "capsule", in: selectionAnimation)
+                    Text(city)
+                        .foregroundColor(selectedCity == city ? .white : .gray)
+                        .font(.body)
+                        .frame(height: height)
+                        .padding(.horizontal)
+                        .background {
+                            if selectedCity == city {
+                                Capsule()
+                                    .foregroundColor(appColor)
+                                    .matchedGeometryEffect(id: matchedGeoEffectId, in: selectionAnimation)
+                            } else {
+                                Capsule()
+                                    .foregroundColor(.black.opacity(0.01))
+                            }
                         }
-                    }
                 }
             }
         }
@@ -44,7 +45,6 @@ struct HorizontalPicker: View {
             Capsule()
                 .foregroundColor(appColor.opacity(0.2))
         }
-        .padding()
     }
 }
 
