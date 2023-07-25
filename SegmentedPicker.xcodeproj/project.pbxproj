@@ -11,7 +11,8 @@
 		B83FB4132A704BF900B14B8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB4122A704BF900B14B8E /* ContentView.swift */; };
 		B83FB4152A704BFA00B14B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83FB4142A704BFA00B14B8E /* Assets.xcassets */; };
 		B83FB4182A704BFA00B14B8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83FB4172A704BFA00B14B8E /* Preview Assets.xcassets */; };
-		B83FB4202A704CF200B14B8E /* VerticalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB41F2A704CF200B14B8E /* VerticalPicker.swift */; };
+		B83FB4202A704CF200B14B8E /* HorizontalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB41F2A704CF200B14B8E /* HorizontalPicker.swift */; };
+		B83FB4252A7056A200B14B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83FB4242A7056A200B14B8E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,8 @@
 		B83FB4142A704BFA00B14B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83FB4172A704BFA00B14B8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B83FB4192A704BFA00B14B8E /* SegmentedPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SegmentedPicker.entitlements; sourceTree = "<group>"; };
-		B83FB41F2A704CF200B14B8E /* VerticalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPicker.swift; sourceTree = "<group>"; };
+		B83FB41F2A704CF200B14B8E /* HorizontalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPicker.swift; sourceTree = "<group>"; };
+		B83FB4242A7056A200B14B8E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				B83FB4142A704BFA00B14B8E /* Assets.xcassets */,
 				B83FB4192A704BFA00B14B8E /* SegmentedPicker.entitlements */,
 				B83FB4162A704BFA00B14B8E /* Preview Content */,
+				B83FB4242A7056A200B14B8E /* LaunchScreen.storyboard */,
 			);
 			path = SegmentedPicker;
 			sourceTree = "<group>";
@@ -75,7 +78,7 @@
 			children = (
 				B83FB4102A704BF900B14B8E /* SegmentedPicker.swift */,
 				B83FB4122A704BF900B14B8E /* ContentView.swift */,
-				B83FB41F2A704CF200B14B8E /* VerticalPicker.swift */,
+				B83FB41F2A704CF200B14B8E /* HorizontalPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83FB4252A7056A200B14B8E /* LaunchScreen.storyboard in Resources */,
 				B83FB4182A704BFA00B14B8E /* Preview Assets.xcassets in Resources */,
 				B83FB4152A704BFA00B14B8E /* Assets.xcassets in Resources */,
 			);
@@ -151,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83FB4132A704BF900B14B8E /* ContentView.swift in Sources */,
-				B83FB4202A704CF200B14B8E /* VerticalPicker.swift in Sources */,
+				B83FB4202A704CF200B14B8E /* HorizontalPicker.swift in Sources */,
 				B83FB4112A704BF900B14B8E /* SegmentedPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,6 +325,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
