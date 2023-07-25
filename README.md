@@ -1,5 +1,6 @@
 # SegmentedPicker
 SwiftUI customizable segmented picker
+
 Vertical and Horizonal pickers using .matchedGeometryEffect()
 
 ### Horizontal
