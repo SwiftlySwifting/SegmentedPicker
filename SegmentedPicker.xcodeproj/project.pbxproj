@@ -13,6 +13,7 @@
 		B83FB4182A704BFA00B14B8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83FB4172A704BFA00B14B8E /* Preview Assets.xcassets */; };
 		B83FB4202A704CF200B14B8E /* HorizontalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB41F2A704CF200B14B8E /* HorizontalPicker.swift */; };
 		B83FB4252A7056A200B14B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83FB4242A7056A200B14B8E /* LaunchScreen.storyboard */; };
+		B83FB4272A70570300B14B8E /* VerticalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FB4262A70570300B14B8E /* VerticalPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B83FB4192A704BFA00B14B8E /* SegmentedPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SegmentedPicker.entitlements; sourceTree = "<group>"; };
 		B83FB41F2A704CF200B14B8E /* HorizontalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPicker.swift; sourceTree = "<group>"; };
 		B83FB4242A7056A200B14B8E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B83FB4262A70570300B14B8E /* VerticalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				B83FB4102A704BF900B14B8E /* SegmentedPicker.swift */,
 				B83FB4122A704BF900B14B8E /* ContentView.swift */,
 				B83FB41F2A704CF200B14B8E /* HorizontalPicker.swift */,
+				B83FB4262A70570300B14B8E /* VerticalPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				B83FB4132A704BF900B14B8E /* ContentView.swift in Sources */,
 				B83FB4202A704CF200B14B8E /* HorizontalPicker.swift in Sources */,
 				B83FB4112A704BF900B14B8E /* SegmentedPicker.swift in Sources */,
+				B83FB4272A70570300B14B8E /* VerticalPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
